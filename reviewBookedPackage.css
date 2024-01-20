@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table {
+    width: 80%;
+    max-width: 100%;
+    margin-top: 20px;
+    overflow-x: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th h4{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+td{
+    font-size: 18px ;
+}
+
+td input[type=checkbox]{
+    color: white;
+    accent-color: #39c449e4;
+    mix-blend-mode: multiply;
+}
+
+.main-txt h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.main-txt h1 span{
+    color: #1cc12fe4;
+}
+
+.reviewBtn{
+    margin-top: 20px;
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#updBtn{
+    background-color: black;
+}
+
+#cont{
+    background-color: #1cc12fe4;
+}

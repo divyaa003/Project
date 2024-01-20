@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetSetGo - Sign Up</title>
+
+     <!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Bootstrap link -->
+
+  <!-- css link -->
+  <link rel="stylesheet" href="signup.css">
+  <!-- css link -->
+
+  <!-- FontAwesome Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  
+<!-- FontAwesome Link -->
+
+<!-- js file -->
+<script src="signup.js"></script>
+<!-- js file -->
+
+</head>
+<body>
+    <div class="login-box">
+        <h2><span>S</span>ign up</h2>
+            <form action="#">
+            <div class="input-box" id="email">
+                <input type="text" id="emailInput" required oninput="validateEmail()">
+                <label for="email">Email  <i class="fa-solid fa-user" style="color: #1cc12fe4;"></i></label>
+            </div>
+
+            <div>
+            <p id="emailErrorMessage" class="error-message"></p>
+            </div>
+
+            <div class="input-box" id="phone">
+                <input type="tel" id="phn" required>
+                <label>Phone Number  <i class="fa-solid fa-phone-volume" style="color: #1cc12fe4;"></i></label>        
+            </div>
+
+            <div class="input-box">
+                <input type="password" class="password" id="password" required>
+                <label class="passlabel">Password  
+                    <i class="fa-solid fa-lock" style="color: #1cc12fe4;"></i>   
+                </label>
+                <i class="fa-solid fa-eye-slash" id="togglePassword" style="color: #1cc12fe4;" 
+                onclick="togglePassword('password')"></i>
+            </div>
+            
+            <div class="input-box" id="cnfmpass">
+                <input type="password" class="password" id="cnfmpassword" oninvalid="validatePassword()" required>
+                <label class="passlabel" for="cnfmpassword">Confirm Password  
+                    <i class="fa-solid fa-lock" style="color: #1cc12fe4;"></i>                 
+                </label>    
+                <i class="fa-solid fa-eye-slash" id="toggleCnfPassword" style="color: #1cc12fe4;" 
+                onclick="togglePassword('cnfmpassword')"></i>    
+            </div>
+            
+            
+
+            <a href="#" id="btn" class="btn">Sign up</a>
+
+            <div style="display: flex;">
+                <p id="login-text" onclick="">Already have an Account? </p>
+                <span style="margin-left: 10px;"></span>
+                <a id="changeto" href="login.html">Login</a>
+            </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

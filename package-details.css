@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+.main-txt h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.main-txt h1 span{
+    color: #1cc12fe4;
+}
+
+.about{
+    padding: 0 50px 50px 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+    height: 70%;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about h5{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+h5 .offinc{
+    color: red;
+}
+.about p{
+    font-size: 18px;
+    font-weight: 540;
+    line-height: 2;
+}
+.packDetBtn{
+    margin-top: 20px;
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1cc12fe4;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.packDetBtn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
